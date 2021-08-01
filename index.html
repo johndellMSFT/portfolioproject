@@ -25,9 +25,10 @@
         </div>
     </header>
     <nav class="navbar navbar-expand navbar-dark bg-primary">
-        <a class="sidebar-toggle text-light mr-3"><i class="fa fa-bars"></i></a>
+        <!-- <a class="sidebar-toggle text-light mr-3"><i class="fa fa-bars"></i></a> -->
+        
     
-        <div class="navbar-collapse collapse">
+        <!-- <div class="navbar-collapse collapse" id="navbarMenu">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
@@ -39,14 +40,17 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </nav>
-    
+
     <div class="d-flex align-items-stretch">
-        <div class="sidebar">
+        <div class="sidebar" id=sidebarMenu>
+            <button class="sidebar-toggle" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-dark"></span>
+            </button>
             <ul class="list-unstyled">
                 <li>
-                    <a href="#submenu1" data-toggle="collapse"><i class="fa fa-fw fa-address-card"></i> Dropdown Link</a>
+                    <a href="#submenu1" data-toggle="collapse"><i class="fa fa-fw fa-lg fa-info-circle"></i> Dropdown Link</a>
                     <ul id="submenu1" class="list-unstyled collapse">
                         <li><a href="#">Submenu Item</a></li>
                         <li><a href="#">Submenu Item</a></li>
